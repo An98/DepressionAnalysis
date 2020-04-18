@@ -1,6 +1,8 @@
+from flask import session
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField
 from wtforms.validators import DataRequired, EqualTo
+from pymongo import MongoClient
 
 class RegisterForm(FlaskForm):
     userid = StringField('userid',validators=[DataRequired()])
@@ -15,4 +17,19 @@ class LoginForm(FlaskForm):
         def __call__(self,form,field):
             userid = form['userid'].data
             password = field.data
-            account
+            client = MongoClient('mongodb://localhost:27017/')
+            db = client.project
+            userCollection = db.user
+            user = userCollection.find({'id':userid},{"_id":0,"id":1,"pwd":1})
+            if user.count()>0:
+                for x in user:
+                    if x["id"]!=userid:
+                        raise ValueError('wrong Account')
+                    if x["pwd"]!= password:
+                        raise ValueError('wrong password')
+                    session['userid']=userid
+            else:
+                raise ValueError('No Account')
+    userid = StringField('userid',validators=[DataRequired(), UserPassword()])
+    password = PasswordField('password',validators=[DataRequired(), UserPassword()])
+

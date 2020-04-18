@@ -5,10 +5,11 @@
     <title>Test</title>
 </head>
 <body>
-<!--<form method = "POST" action="/mongo">-->
-<!--    <input type = "text" name="id">-->
-<!--    <button type="submit"></button>-->
-<!--</form>-->
+<h3>
+    {%if userid%}
+    {{ userid }}
+    {%endif%}
+</h3>
 <div>
     <h1>Mongo DB Test</h1>
     <p>연결 성공?</p>
@@ -21,7 +22,10 @@
         <p>-------------------------</p>
         {% endfor %}
     {% endif %}
+
     <button type="button" onclick="location.href='/register'">Register</button>
+    <button type="button" onclick="location.href='/login'">Login</button>
+    <button type="button" onclick="location.href='/logout'">Logout</button>
 </div>
 
 </body>
