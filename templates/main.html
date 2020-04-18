@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<!--<form method = "POST" action="/mongo">-->
+<!--    <input type = "text" name="id">-->
+<!--    <button type="submit"></button>-->
+<!--</form>-->
+<div>
+    <h1>Mongo DB Test</h1>
+    <p>연결 성공?</p>
+    {% if data == None %}
+    <h5>There's no Data</h5>
+    {% else %}
+        {% for i in data %}
+        <p>id:{{i.id}}</p>
+        <p>nickname:{{i.nickname}}</p>
+        <p>-------------------------</p>
+        {% endfor %}
+    {% endif %}
+    <button type="button" onclick="location.href='/register'">Register</button>
+</div>
+
+</body>
+</html>
