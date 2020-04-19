@@ -7,7 +7,7 @@
 <body>
 <h3>
     {%if userid%}
-    {{ userid }}
+    {{ userid, nickname }}
     {%endif%}
 </h3>
 <div>
@@ -26,6 +26,7 @@
     <button type="button" onclick="location.href='/register'">Register</button>
     <button type="button" onclick="location.href='/login'">Login</button>
     <button type="button" onclick="location.href='/logout'">Logout</button>
+    <button type="button" onclick="location.href='/write'">Write</button>
 </div>
 
 </body>
