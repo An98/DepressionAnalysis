@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b969e173-1cd2-496f-b527-01d0cccaf890" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/pastDiary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/write.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/depression_tweets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -58,6 +54,7 @@
       <updated>1585804926888</updated>
       <workItem from="1585804928034" duration="17105000" />
       <workItem from="1587205719864" duration="1355000" />
+      <workItem from="1587399898443" duration="253000" />
     </task>
     <servers />
   </component>
