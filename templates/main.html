@@ -8,6 +8,7 @@
 <h3>
     {%if userid%}
     {{ userid, nickname }}
+    {{ msg }}
     {%endif%}
 </h3>
 <div>
@@ -19,6 +20,7 @@
         {% for i in data %}
         <p>id:{{i.id}}</p>
         <p>nickname:{{i.nickname}}</p>
+
         <p>-------------------------</p>
         {% endfor %}
     {% endif %}

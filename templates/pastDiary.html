@@ -25,13 +25,15 @@
         <div class="col-12">
             <div>
 
-                <p>연결 성공?</p>
+                <p>This is the list</p>
                 {% if data == None %}
                 <h5>There's no Data</h5>
                 {% else %}
                 {% for i in data %}
                 <p>title:{{i.title}}</p>
                 <p>content:{{i.content}}</p>
+                <p>depression:{{i.depression}}</p>
+                <p>percentage:{{i.percentage}}</p>
                 <p>time:{{i.date}}</p>
                 <p>-------------------------</p>
                 {% endfor %}
